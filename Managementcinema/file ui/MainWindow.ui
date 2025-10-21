@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1114</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>1</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">   background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+    }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calisto MT</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;DANH SÁCH PHIM &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>421</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Time New Roman,sans-serif</family>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <row>
+     <property name="text">
+      <string>Avatar: The Way Of Water</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Barbie</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>A Man Called Otto</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Past Lives</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>The Creator</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Gurdians of the Galaxy</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Ant-Man and The Wasp</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Thể loại</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Thời lượng</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ngày khởi chiếu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Trạng thái</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton_XoaDS">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>240</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Xoá</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>280</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;QUẢN LÝ VÉ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>310</y>
+      <width>431</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Time New Roman,sans-serif</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <row>
+     <property name="text">
+      <string>Avatar: The Way Of The Water</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Barbie</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>A Man Called Otto</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Past Lives</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>The Creator</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Gurdians of the Galaxy</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Ant-Man and The Wasp</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Giá vé</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Số vé đã bán</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Số vé còn lại</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Chinhsua_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>490</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Chỉnh sửa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Lammoi">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>490</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Làm mới</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>70</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calisto MT</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;DANH SÁCH NGƯỜI DÙNG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>100</y>
+      <width>311</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>username</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Số điện thoại</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Chinhsua_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>490</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Chỉnh sửa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Xoauser">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>490</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Xoá</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Chinhsua">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>240</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                    stop:0 #FFF7AD, 
+                    stop:0.5 #FFA9F9, 
+                    stop:1 #D98BBF);
+font-weight: bold;
+color: #000000; /* Đảm bảo chữ rõ ràng, có thể chỉnh thành màu khác nếu cần */</string>
+    </property>
+    <property name="text">
+     <string>Chỉnh sửa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonQuaylaiDT">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>490</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton {
+        background-color: rgb(181, 62, 138);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 5px 10px;
+        border: 2px solid #4682B4;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Quay lại</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>-6</x>
+      <y>-5</y>
+      <width>1121</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/nen.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_4</zorder>
+   <zorder>label</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>pushButton_XoaDS</zorder>
+   <zorder>label_2</zorder>
+   <zorder>tableWidget_2</zorder>
+   <zorder>pushButton_Chinhsua_2</zorder>
+   <zorder>pushButton_Lammoi</zorder>
+   <zorder>label_3</zorder>
+   <zorder>tableWidget_3</zorder>
+   <zorder>pushButton_Chinhsua_3</zorder>
+   <zorder>pushButton_Xoauser</zorder>
+   <zorder>pushButton_Chinhsua</zorder>
+   <zorder>ButtonQuaylaiDT</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1114</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
